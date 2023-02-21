@@ -1,2 +1,2 @@
 <?php
-$conn = new mysqli('localhost', 'root', '', 'contoh_crud'); 
+$conn = new mysqli('localhost', 'root', '', 'penperel'); 

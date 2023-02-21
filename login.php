@@ -2,7 +2,7 @@
 require 'conn.php';
 
 $idpengguna = $_POST['idpengguna'];
-$kata = $_POST['kata'];
+$katalaluan = $_POST['kata'];
 
 if($idpengguna == 'admin'){
     $sql ='SELECT * FROM admin';

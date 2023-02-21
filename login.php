@@ -25,7 +25,7 @@ if($idpengguna == 'admin'){
             if($result->num_rows ==1){
             $row =$result->fetch_object();
             if(password_verify($kata,$row->kata)){
-                $_SESSION['idwarden']=$roq->idwarden;
+                $_SESSION['idwarden']=$row->idwarden;
                 header('location:staff/');
             }else{
                 ?>

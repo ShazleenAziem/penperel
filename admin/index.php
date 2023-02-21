@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Senarai Pelajar</h2>
+    <h2>Senarai warden</h2>
 
     <?php
     if(!isset($_GET['edit'])){
@@ -22,7 +22,7 @@
                         <td><input type="text" name="namawarden" required minlenght="12" maxlenght="12"></td>
                     </tr>
                     <tr>
-                        
+
                     </tr>
                         
                  </table>

@@ -11,7 +11,7 @@ if($idpengguna == 'admin'){
     if(password_verify($kata,$row->kata)){
         $_SESSION['idpengguna']='admin';
         header('location:admin/');
-    }else{
+    }else{}
         ?>
         <script>
             alert('Maaf, kata laluan salah');

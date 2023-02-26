@@ -21,13 +21,26 @@
                         <td>Nama Warden</td>
                         <td><input type="text" name="namawarden" required minlenght="12" maxlenght="12"></td>
                     </tr>
-                    <tr>
 
+                    <tr>
+                        <td>No.Kad Pengenalan<td>
+                        <td><input type="text" name="nomatrik" required minlenght="12" maxlenght="12"><td>
                     </tr>
-                        
+
+                    <tr>
+                    <td colspan="2">
+                        <button type="submit">SIMPAN</button>
+                        <button type="reset">BATAL</button>
+                     </td>
+                    </tr>
                  </table>
             </fieldset>
-               
+    </form>
+    <?php
+    }else{
+        $idwa
     }
+               
+    
 </body>
 </html>

@@ -17,7 +17,7 @@
         <tr>
             <td>1</td>
             <td align='center'>Muhammad Nurfaiz</td>
-            <td align='center'>Admin</td>         
+            <td align='center'>Warden</td>         
         </tr>
 
         <tr>
@@ -29,6 +29,6 @@
         <tr>
             <td>3</td>
             <td align='center'>Shazleen Aziem</td>
-            <td align='center'>Warden</td>
+            <td align='center'>Admin</td>
         </tr>
 </table>

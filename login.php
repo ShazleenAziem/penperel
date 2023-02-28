@@ -1,8 +1,7 @@
 <?php
-require 'conn.php';
-
+require 'include/conn.php';
 $idpengguna = $_POST['idpengguna'];
-$katalaluan = $_POST['kata'];
+$kata = $_POST['kata'];
 
 if($idpengguna == 'admin'){
     $sql ='SELECT * FROM admin';
@@ -19,7 +18,7 @@ if($idpengguna == 'admin'){
             </script>
             <?php
     }
-    }else{
+    else{
         $sql = "SELECT idwarden, kata FROM warden WHERE nokpwarden ='$idpengguna ";
         $result = $conn->query($sql);
             if($result->num_rows ==1){

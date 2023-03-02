@@ -25,6 +25,9 @@ $idpengguna = $_SESSION['idpengguna'];
                 <a href="index.php?menu=product">Product</a>
                 ::
                 <a href="index.php?menu=home">About</a>
+                ::
+                <a href="../logout.php">Logout</a>
+                ::
 
             </td>
         </tr>

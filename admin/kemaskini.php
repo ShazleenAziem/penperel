@@ -1,5 +1,5 @@
-<?
-require 'C:\xampp\htdocs\webprogramming\latihan6\penperel\include\conn.php';
+<?php
+require '../include/conn.php';
 
 $idwarden = $_POST['idwarden'];
 $namawarden = $_POST['namawarden'];

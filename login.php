@@ -12,27 +12,27 @@ if ($idpengguna == 'admin') {
         header('location:admin/');
     } else {
     }
-?>
+    ?>
     <script>
-        alert('Maaf, kata laluan salah');
+        alert('Maaf, kata laluan salah.1');
         window.location = './';
     </script>
-    <?php
+<?php
 } else {
-    $sql = "SELECT idwarden, kata FROM warden WHERE nokpwarden ='$idpengguna ";
+    $sql = "SELECT idwarden, kata FROM warden WHERE idwarden ='$idpengguna'";
     $result = $conn->query($sql);
     if ($result->num_rows == 1) {
         $row = $result->fetch_object();
         if (password_verify($kata, $row->kata)) {
             $_SESSION['idwarden'] = $row->idwarden;
-            header('location:staff/');
+            header('location:warden/');
         } else {
-    ?>
+            ?>
             <script>
-                alert('Maaf, kata laluan salah.');
+                alert('Maaf, kata laluan salah.2');
                 window.location = './';
             </script>
-<?php
+        <?php
         }
     }
 }

@@ -1,10 +1,10 @@
 <?php
 require '../include/conn.php';
-$namawarden = $_POST['namawarden'];
-$nokpwarden = $_POST['nokpwarden'];
-$kata = password_hash($nokpwarden,PASSWORD_BCRYPT);
+$jenisperalatan = $_POST['jenisperalatan'];
+$jenama = $_POST['jenama'];
+$nosiri = $_POST['nosiri'];
 
-$sql = "INSERT INTO warden VALUES(null,'$namawarden', '$nokpwarden','$kata')";
+$sql = "INSERT INTO peralatan VALUES(null,'$jenisperalatan', '$jenama','$nosiri')";
 #echo $sql;
 $conn->query($sql);
 #echo $conn->error;

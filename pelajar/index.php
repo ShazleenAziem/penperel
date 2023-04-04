@@ -1,14 +1,19 @@
+
 <?php
 require '../include/conn.php';
-if (!isset($_SESSION['idpengguna'])) {
-    header("Location:../index.php");
-    exit();
+if (!isset($_SESSION['idpelajar'])) header('location:../'); {
+    $idpelajar = $_SESSION['idpelajar'];
+    $sql = "SELECT * FROM pelajar WHERE idpelajar = $idpelajar";
+    $row = $conn->query($sql)->fetch_object();
+    $namapelajar = $row->namapelajar;
 }
 
-$idpengguna = $_SESSION['idpengguna'];
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +25,7 @@ $idpengguna = $_SESSION['idpengguna'];
 <body>
     <h2>nama :
         <?php
-        echo $idpengguna;
+        echo $namapelajar;
         ?>
     </h2>
     <table>
